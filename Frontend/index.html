@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Registrazione Music App</title>
+</head>
+<body style="background: linear-gradient(to right, #83a4d4, #b6fbff); display: flex; justify-content: center; align-items: center;">
+
+    <div style="background: white; padding: 40px; border-radius: 15px; box-shadow: 0 8px 16px rgba(0,0,0,0.2); width: 100%; max-width: 500px;">
+        <div style="text-align: center; margin-bottom: 20px;">
+            <h1 style="color: #2c3e50;">Registrati alla Music App</h1>
+            <p style="color: #7f8c8d;">La tua musica, il tuo mondo 🌟</p>
+        </div>
+
+        <form onsubmit="alert('Registrazione inviata!'); location.reload(); return false;">
+            
+            <div style="margin-bottom: 15px;">
+                <label>Nome:</label><br>
+                <input type="text" name="nome" required style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #ccc;">
+            </div>
+
+            <div style="margin-bottom: 15px;">
+                <label>Cognome:</label><br>
+                <input type="text" name="cognome" required style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #ccc;">
+            </div>
+
+            <div style="margin-bottom: 15px;">
+                <label>Email:</label><br>
+                <input type="email" name="email" required style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #ccc;">
+            </div>
+
+            <div style="margin-bottom: 15px;">
+                <label>Password:</label><br>
+                <input type="password" name="password" required style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #ccc;">
+            </div>
+
+            <div style="margin-bottom: 15px;">
+                <label>Data di nascita:</label><br>
+                <input type="date" name="data_nascita" required style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #ccc;">
+            </div>
+
+            <div style="margin-bottom: 15px;">
+                <label>Numero di telefono:</label><br>
+                <input type="number" name="telefono" required style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #ccc;">
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <label>Generi musicali preferiti:</label><br>
+                <div style="margin-top: 8px;">
+                    <input type="checkbox" name="genere" value="Pop"> Pop<br>
+                    <input type="checkbox" name="genere" value="Rock"> Rock<br>
+                    <input type="checkbox" name="genere" value="Kpop"> Kpop<br>
+                    <input type="checkbox" name="genere" value="Classica"> Classica<br>
+                    <input type="checkbox" name="genere" value="Rap"> Rap<br>
+                    <input type="checkbox" name="genere" value="Jazz"> Jazz<br>
+                </div>
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <label>Accetti i termini e condizioni?</label><br>
+                <div style="margin-top: 8px;">
+                    <input type="radio" name="termini" value="si" required> Sì<br>
+                    <input type="radio" name="termini" value="no" required> No<br>
+                </div>
+            </div>
+
+            <div style="text-align: center;">
+                <button type="submit" style="padding: 12px 30px; background-color: #3498db; color: white; font-size: 16px; border: none; border-radius: 10px; cursor: pointer;">
+                    Invia registrazione
+                </button>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+</html>
